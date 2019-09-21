@@ -20,7 +20,7 @@
 #   #sh=shell,-c=command , app=name of the service
 
 
-version: '3'
+version: "3.7"
 
 services:
  app:
