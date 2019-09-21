@@ -20,6 +20,21 @@
 #   #sh=shell,-c=command , app=name of the service
 
 
+# version: '3'
+#
+# services:
+#  app:
+#    build:
+#      context: .
+#    ports:
+#      - 8000:8000
+#    volumes:
+#      - ./app:/app
+#    command: >
+#       python manage.py runserver 0.0.0.0:8000
+
+
+
 version: '3'
 
 services:
@@ -27,8 +42,8 @@ services:
    build:
      context: .
    ports:
-     - 8000:8000
+     - "8000:8000"
    volumes:
      - ./app:/app
    command: >
-      python manage.py runserver 0.0.0.0:8000
+     sh -c "python manage.py runserver 0.0.0.0:8000"
