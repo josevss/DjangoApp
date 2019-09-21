@@ -20,14 +20,14 @@
 #   #sh=shell,-c=command , app=name of the service
 
 
-version: "3.7"
+version: '3'
 
 services:
  app:
    build:
      context: .
    ports:
-     - "8000:8000"
+     - 8000:8000
    volumes:
      - ./app:/app
    command: >
