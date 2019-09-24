@@ -90,7 +90,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      # - D:\Jose\python_course\DjangoApp\app:/app
+       #- D:\Jose\python_course\DjangoApp\app:/app
       - ./app:/app
     command: >
       sh -c "python manage.py wait_for_db &&
